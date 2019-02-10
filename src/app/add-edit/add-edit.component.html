@@ -1,0 +1,8 @@
+<div class="edits"><br>
+<label>Id : </label><input disabled="disabled" type='text' [(ngModel)]='values.gid'><br><br>
+<label>Name : </label><input type='text' [(ngModel)]='values.gname'><br><br>
+<label>Price : </label><input type='text' [(ngModel)]='values.gprice'><br><br>
+<label>Quantity : </label><input type='text' [(ngModel)]='values.gquantity'><br><br>
+<label>Description : </label><input type='text' [(ngModel)]='values.gdescription'><br><br>
+<button class="btns" (click)="save(values.gid,values.gname,values.gprice,values.gquantity,values.gdescription)">Save</button> <button class="btns" (click)="cancel()">Cancel</button>
+</div>

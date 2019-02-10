@@ -1,0 +1,21 @@
+<table border=1 class="listing" *ngIf="this.service.tggle">
+  <tr>
+    <td>S.No.</td>
+    <td>Id</td>
+    <td>Name</td>
+    <td>Price</td>
+    <td>Quantity</td>
+    <td>Description</td>
+    <td>Action</td>
+  </tr>
+  <tr *ngFor="let item of service.products; let i = index;">
+    <td>{{i+1}}</td>
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.price}}</td>
+    <td>{{item.quantity}}</td>
+    <td>{{item.description}}</td>
+    <td><button class="btns" (click)="edit(item.id,item.name,item.price,item.quantity,item.description)">Edit</button> <button class="btns" (click)="delete(item.id)">Delete</button></td>
+  </tr>
+</table>
+<app-add-edit *ngIf="!this.service.tggle" [values]='gvalues'></app-add-edit>

@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+}
+.listing {
+  background: lightgoldenrodyellow;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 14pt;
+  display: inline-table;
+}
+.listing tr td {
+  padding: 20px;
+}
+.btns {
+  padding: 10px 20px;
+  margin: 10px;
+  background: brown;
+  color: white;
+  font-weight: bold;
+  border: 1px solid brown;
+  border-radius: 4px;
+}
+.edits {
+  display: inline-block;
+  background: lightblue;
+  border: 1px solid gray;
+  padding: 20px;
+  font-size: 14pt;
+}
+input {
+  width: 250px;
+  height: 25px;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+
+
